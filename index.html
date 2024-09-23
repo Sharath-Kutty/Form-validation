@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Contact Us</h1>
+        <div id="message" class="message"></div> <!-- Message area -->
+        <form>
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required style="color: white;">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Email" required>
+                <i class='bx bxl-gmail'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <textarea name="message" placeholder="Message" required></textarea>
+                <i class='bx bxs-message'></i>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="contact" placeholder="Contact (10 digits)" required pattern="\d{10}">
+                <i class='bx bxs-contact'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+
+            <p id="success"></p>
+        </form>
+
+    </div>
+</body>
+</html>

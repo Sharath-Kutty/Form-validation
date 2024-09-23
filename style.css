@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(image/leaf.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 300px;
+    background: transparent;
+    border: 2px solid rgba(251, 248, 248, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fcfbfb;
+    border-radius: 20px;
+    padding: 30px 40px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: none; /* Initially hidden */
+}
+
+.input-box {
+    position: relative;
+    margin: 15px 0;
+    color: white;
+}
+
+.input-box input,
+.input-box textarea {
+    transition: border-color 0.3s;
+    width: 72%;
+    height: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(39, 109, 39);
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder {
+    color: #fff;
+    left: 10px;
+}
+.input-box textarea::placeholder{
+    color: #fff;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: #fafbfa;
+    outline: none;
+}
+
+.input-box i {
+    position: absolute;
+    right: 25px;
+    top: 23px;
+    color: #fdfafa;
+}
+
+.input-box textarea {
+    resize: none;
+    height: 100px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #4b6f51;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+} 
+.btn:hover{
+    background-color: rgb(40, 67, 40) ;
+}
